@@ -1,0 +1,4 @@
+*.exe
+*.deb
+*-source.zip
+node_modules/

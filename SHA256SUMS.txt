@@ -1,0 +1,2 @@
+4edc4715c404b59439d1225a3fb4007f43aee65e6d9f325fab9510cb5f98f69f  TEXTURA-Desktop-1.0.2-Windows-x64-setup.exe
+d4dacb7cce978e5a8a31b20f41c22513a10520367d1152d30eca3c739407477f  textura-desktop_1.0.2_all.deb
