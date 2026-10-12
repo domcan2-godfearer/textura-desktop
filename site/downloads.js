@@ -4,7 +4,7 @@
  const state=document.getElementById('release-state');
  links.forEach(link=>{link.setAttribute('aria-disabled','true');link.addEventListener('click',event=>{if(link.hasAttribute('aria-disabled'))event.preventDefault();});});
  try{
-  const response=await fetch('https://api.github.com/repos/domcan2-godfearer/textura-desktop/releases/tags/v1.0.2',{headers:{Accept:'application/vnd.github+json'}});
+  const response=await fetch('https://api.github.com/repos/domcan2-godfearer/textura-desktop/releases/tags/v1.0.3',{headers:{Accept:'application/vnd.github+json'}});
   if(!response.ok)throw Error('Release unavailable');
   const release=await response.json();
   for(const link of links){
