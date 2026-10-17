@@ -1,14 +1,14 @@
 # TEXTURA Desktop downloads
 
-Public download page for Windows and Ubuntu, version 1.0.3 beta. This repository contains the website only; application source remains private.
+Public download page for Windows and Ubuntu, version 1.0.7 beta. This repository contains the website only; application source remains private.
 
 ## Publish
 
 1. Create the public repository `domcan2-godfearer/textura-desktop` and commit this folder's contents to `main`, including `.github/workflows/pages.yml`.
 2. In Settings → Pages, choose **GitHub Actions** as the source. Run the Publish desktop download page workflow if necessary.
-3. Create a release tagged `v1.0.3`, titled **TEXTURA Desktop 1.0.3 beta**. Attach these exact existing files:
-   - `TEXTURA-Desktop-1.0.3-Windows-x64-setup.exe`
-   - `textura-desktop_1.0.3_all.deb`
+3. Create a release tagged `v1.0.7`, titled **TEXTURA Desktop 1.0.7 beta**. Attach these exact existing files:
+   - `TEXTURA-Desktop-1.0.7-Windows-x64-setup.exe`
+   - `textura-desktop_1.0.7_all.deb`
    - `SHA256SUMS.txt`
 4. Publish the release. Verify both download buttons at https://domcan2-godfearer.github.io/textura-desktop/.
 
