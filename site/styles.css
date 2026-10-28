@@ -121,3 +121,28 @@ footer p{color:#d4e0e4}
 @media(max-width:1000px){.download-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.android-card{grid-column:1/-1}.included-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:760px){.scenic-hero{margin:0 -24px;padding:38px 26px 46px;min-height:0}.scenic-hero .study-preview{transform:none}.visual-features{grid-template-columns:repeat(3,minmax(0,1fr));gap:20px 10px}.downloads{padding:30px 17px}.download-grid{grid-template-columns:1fr}.android-card{grid-column:auto}.context-banner{padding:35px 25px;justify-content:center}.included-grid{gap:20px}}
 @media(max-width:480px){.scenic-hero{margin:0 -18px;padding:32px 21px 43px}.scenic-hero h1{font-size:clamp(38px,9vw,46px)}.scenic-hero .intro{font-size:16px}.visual-features{grid-template-columns:repeat(2,minmax(0,1fr));padding:24px 0}.visual-features span{font-size:32px}.visual-features strong{font-size:13px}.downloads{margin:0 -8px;padding:27px 14px}.included-showcase{padding:24px 18px}.included-grid{grid-template-columns:1fr 1fr;gap:22px 12px}.included-grid h3{font-size:17px}.context-banner{min-height:270px;background-position:center}.context-banner h2{font-size:31px}}
+
+/* Layered device showcase matching the approved TEXTURA visual direction */
+.scenic-hero{grid-template-columns:.86fr 1.14fr;min-height:550px;align-items:center;gap:18px}
+.device-showcase{position:relative;min-width:0;min-height:385px;z-index:2}
+.device-showcase .study-preview{position:absolute;top:9px;left:3%;width:90%;margin:0;transform:perspective(1200px) rotateY(-4deg) rotate(-1deg);border-radius:14px;box-shadow:0 25px 35px #09283f55}
+.device-showcase .preview-body{min-height:280px}
+.device-showcase .preview-caption{margin:6px 0 0}
+.device-tablet{position:absolute;bottom:3px;right:-2%;width:48%;height:185px;background:#fffdf8;border:9px solid #112e40;border-radius:16px;box-shadow:0 17px 24px #09283f66;transform:rotate(3deg);overflow:hidden;color:#163448}
+.mini-bar{height:27px;background:#153f57;color:#fff;padding:7px 10px;font-size:9px;letter-spacing:.04em}
+.mini-bar span{float:right;font-size:7px}
+.mini-columns{display:grid;grid-template-columns:1fr 1fr;gap:7px;padding:10px 7px}
+.mini-columns>div{background:#f8f3e8;padding:7px;border-radius:4px;min-width:0}
+.mini-columns b{font:12px Georgia,serif}
+.mini-columns p{font:11px/1.5 Georgia,serif;margin:8px 0}
+.mini-columns small{font-size:8px;color:#60707a}
+.device-phone{position:absolute;bottom:-9px;left:43%;width:20%;height:195px;border:9px solid #102c3e;border-radius:22px;background:#fffdf8;box-shadow:0 14px 25px #09283f66;color:#153447;padding:16px 8px 8px;transform:rotate(-2deg);overflow:hidden}
+.device-phone .phone-speaker{position:absolute;top:5px;left:36%;width:28%;height:4px;background:#102c3e;border-radius:5px}
+.device-phone .mini-bar{margin:-3px -8px 12px;font-size:8px}
+.device-phone b{font:13px Georgia,serif}
+.device-phone p{font:11px/1.55 Georgia,serif;margin:8px 0}
+.device-phone small{font-size:8px;color:#687b84}
+@media(max-width:1000px){.scenic-hero{grid-template-columns:1fr;gap:10px}.device-showcase{width:min(100%,680px);margin:auto;min-height:390px}}
+@media(min-width:761px) and (max-width:1000px){.device-showcase .study-preview{width:85%}}
+@media(max-width:760px){.device-showcase{min-height:335px;max-width:560px}.device-showcase .study-preview{width:89%;left:3%;top:5px}.device-tablet{height:155px;bottom:4px;border-width:7px}.device-phone{height:166px;bottom:-5px;border-width:7px}.mini-columns p{font-size:9px}}
+@media(max-width:480px){.device-showcase{min-height:265px}.device-showcase .study-preview{width:92%;left:1%;top:3px;border-width:5px}.device-showcase .preview-body{min-height:185px}.device-showcase .preview-top{padding:4px}.device-showcase .preview-caption{display:none}.device-tablet{height:118px;width:51%;border-width:5px;bottom:2px;right:-1%;border-radius:11px}.device-phone{height:128px;width:22%;border-width:5px;bottom:-3px;left:41%;border-radius:14px;padding:12px 5px 5px}.device-phone .mini-bar{margin:-2px -5px 6px;height:20px;padding:5px;font-size:6px}.device-phone b{font-size:10px}.device-phone p{font-size:8px}.device-phone small{font-size:6px}.mini-bar{height:20px;padding:4px 6px;font-size:7px}.mini-bar span{font-size:5px}.mini-columns{gap:3px;padding:5px}.mini-columns>div{padding:4px}.mini-columns b{font-size:9px}.mini-columns p{font-size:8px;margin:3px 0}.mini-columns small{font-size:6px}}
