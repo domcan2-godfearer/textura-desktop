@@ -146,3 +146,50 @@ footer p{color:#d4e0e4}
 @media(min-width:761px) and (max-width:1000px){.device-showcase .study-preview{width:85%}}
 @media(max-width:760px){.device-showcase{min-height:335px;max-width:560px}.device-showcase .study-preview{width:89%;left:3%;top:5px}.device-tablet{height:155px;bottom:4px;border-width:7px}.device-phone{height:166px;bottom:-5px;border-width:7px}.mini-columns p{font-size:9px}}
 @media(max-width:480px){.device-showcase{min-height:265px}.device-showcase .study-preview{width:92%;left:1%;top:3px;border-width:5px}.device-showcase .preview-body{min-height:185px}.device-showcase .preview-top{padding:4px}.device-showcase .preview-caption{display:none}.device-tablet{height:118px;width:51%;border-width:5px;bottom:2px;right:-1%;border-radius:11px}.device-phone{height:128px;width:22%;border-width:5px;bottom:-3px;left:41%;border-radius:14px;padding:12px 5px 5px}.device-phone .mini-bar{margin:-2px -5px 6px;height:20px;padding:5px;font-size:6px}.device-phone b{font-size:10px}.device-phone p{font-size:8px}.device-phone small{font-size:6px}.mini-bar{height:20px;padding:4px 6px;font-size:7px}.mini-bar span{font-size:5px}.mini-columns{gap:3px;padding:5px}.mini-columns>div{padding:4px}.mini-columns b{font-size:9px}.mini-columns p{font-size:8px;margin:3px 0}.mini-columns small{font-size:6px}}
+
+/* Hero composition correction: continuous landscape, distinct devices */
+.scenic-hero{
+  background:linear-gradient(90deg,rgba(239,244,238,.85) 0%,rgba(240,239,224,.60) 39%,rgba(241,224,192,.18) 100%),
+    url("https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=2000&q=85") center center/cover no-repeat !important;
+  isolation:isolate;overflow:visible;
+}
+.scenic-hero:before{display:none!important}
+.scenic-hero:after{z-index:0;pointer-events:none}
+.scenic-hero .hero-copy,.scenic-hero .device-showcase{z-index:2}
+.device-showcase{min-height:415px;overflow:visible}
+.device-showcase .study-preview{
+  top:0;left:1%;width:88%;height:315px;overflow:hidden;
+  transform:perspective(1300px) rotateY(-5deg) rotate(-1deg);
+}
+.device-showcase .preview-body{min-height:252px}
+.device-showcase .preview-caption{display:none}
+.device-tablet{
+  right:-2%;bottom:15px;width:48%;height:194px;
+  transform:rotate(3deg);z-index:4;
+}
+.device-phone{
+  left:43%;bottom:0;width:21%;height:208px;
+  transform:rotate(-2deg);z-index:5;
+}
+@media(max-width:1000px){
+ .scenic-hero{background-position:center center!important}
+ .device-showcase{min-height:420px;max-width:670px}
+ .device-showcase .study-preview{width:89%;height:325px}
+}
+@media(max-width:760px){
+ .scenic-hero{overflow:hidden; background-position:55% center!important}
+ .device-showcase{min-height:335px;width:100%}
+ .device-showcase .study-preview{left:0;width:88%;height:265px;transform:rotate(-1deg)}
+ .device-showcase .preview-body{min-height:220px}
+ .device-tablet{width:49%;height:156px;right:0;bottom:14px;z-index:4}
+ .device-phone{width:23%;height:173px;left:40%;bottom:0;z-index:5}
+}
+@media(max-width:480px){
+ .scenic-hero{background:linear-gradient(180deg,rgba(244,246,239,.88) 0%,rgba(241,238,225,.76) 48%,rgba(236,221,191,.35) 100%),
+ url("https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=1000&q=85") center center/cover no-repeat!important}
+ .device-showcase{min-height:285px;margin-top:4px}
+ .device-showcase .study-preview{left:0;top:0;width:89%;height:224px;border-width:6px}
+ .device-showcase .preview-body{min-height:185px}
+ .device-tablet{right:0;bottom:11px;width:52%;height:130px;border-width:6px}
+ .device-phone{left:40%;bottom:0;width:25%;height:147px;border-width:6px}
+}
