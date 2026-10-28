@@ -206,3 +206,10 @@ footer p{color:#d4e0e4}
 @media(max-width:480px){
  .scenic-hero{background-image:linear-gradient(180deg,rgba(246,244,234,.78),rgba(246,244,234,.38) 55%,rgba(246,244,234,.06)),url("assets/hero-landscape.svg")!important;background-position:57% center!important}
 }
+
+/* Approved final polish: context banner only */
+.context-banner .eyebrow{color:#76501e;font-weight:800}
+.context-banner h2{color:#102c3e}
+.context-banner p:not(.eyebrow){color:#263c49;font-weight:500}
+.context-banner .button.gold{background:#ad8661;color:#fffdf8;border:1px solid #a17a55;box-shadow:0 2px 7px #6e513020}
+.context-banner .button.gold:hover{background:#9f7956}
